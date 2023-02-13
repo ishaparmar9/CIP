@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-device-width:768px)" href="css/tabletview.css">
+    <link rel="stylesheet" media="screen and (max-device-width:480px)" href="css/mobileview.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Analysis</title>
+</head>
+<body style="background-color: #FAFAFA;">
+    <div id="main-content">
+        <div id="header-content">
+            <img class="header-content-style" id="menu-bar-style" src="/images/menu-bar.svg" alt="" >
+            <img class="header-content-style" id="header-logo-style" src="/images/header-logo.svg" alt="" >
+            <img class="header-content-style" id="search-icon-style" src='/images/search-icon.svg' alt="" > 
+            <input class="header-content-style" id="search-bar-style" type="search" name="search" placeholder= "Search" id="search-bar" >
+            <img class="header-content-style" id="noti-icon-style" src="/images/notification-icon.svg" alt="" >
+            <img class="header-content-style" id="profile-img-style" src="/images/profile.png" alt="" >
+            <span class="header-content-style" id="profile-name">John Doe</span>
+            <img class="header-content-style" id="dnwrd-arrow-style" src="/images/downward-arrow.svg" alt="">     
+        </div>
+        <div id="box-align">
+            <div id="sidebar">
+                <div class="sidebar-block">
+                    <img src="images/dashboard-default.svg" alt="">
+                    Dashboard
+                </div>
+                <div class="sidebar-block" style="background-color: #FFF3F4; color: #C8242F;">
+                    <img src="images/graph-active.svg" alt="">
+                    Analysis
+                </div>
+                <div class="sidebar-block">
+                    <img src="images/inbox-default.svg" alt="">
+                    Inbox
+                </div>
+                <div class="sidebar-block">
+                    <img src="images/clock-default.svg" alt="">
+                    History
+                </div>
+                <div class="sidebar-block">
+                    <img src="images/user-default.svg" alt="">
+                    Users
+                </div>
+                <div class="sidebar-block">
+                    <img src="images/maintenance-default.svg" alt="">
+                    Maintenance
+                </div>
+                <div class="sidebar-block">
+                    <img src="images/setting-default.svg" alt="">
+                    Settings
+                </div>
+            </div>
+           <div class="analysis-main-box" >
+                <div id="analysis-head">
+                    Analysis
+                </div>
+                <div id="analysis-form">
+                    <form action="">
+                        <h4 class="analysis-label">One Column</h4>
+
+                        <input type="text" name="name1" id="name1" placeholder="Name" class="input-style1" >
+                        <br>
+
+                        <!-- <select name="dropdown" id="dropdown" class="input-style1" >
+                            <option value="" selected disabled>Dropdown</option>
+                            <option value="">first</option>
+                            <option value="">second</option>
+                        </select>
+                        <br> -->
+                        <input type="text" placeholder="Dropdown" class="input-style1">
+
+                        <textarea name="multi-line" id="multi-line" placeholder="Multiple line" class="input-style1 txt-area" ></textarea>
+
+
+
+                        <br>
+
+
+
+                        <h4 class="analysis-label">Two Column</h4>
+
+                        <div >
+                            <div class="col-style col2">
+                                <input type="text" name="name2" id="name2" placeholder="Name" style="padding-left: 10px; border: 1px #ADADAD solid;">
+                                <input type="text" name="name2" id="name2" placeholder="Name" style="padding-left: 10px; border: 1px #ADADAD solid;">
+
+                                <!-- <fieldset style="margin-top: -10px;">
+                                    <legend>Username</legend>
+                                    <input type="text" value="Johndoe">
+                                </fieldset> -->
+                            </div>
+
+
+                                <br>
+
+                            <div class="col-style col2">
+                                <input type="password" name="pw" id="pw" value="111111111" style="padding-left: 10px; border: 1px #ADADAD solid;">
+                                <!-- <select name="dropdown2" id="dropdown2" >
+                                    <option value="" selected disabled>Dropdown</option>
+                                    <option value="">first</option>
+                                    <option value="">second</option>
+                                </select> -->
+                                <input type="text" name="" id="" placeholder="Dropdown" style="border: 1px #ADADAD solid; padding-left: 10px;">
+                            </div>
+
+                        </div>
+
+
+                        <br>
+
+
+                        <h4 class="analysis-label ">Three Column</h4>
+
+                        <div class="col-style col3">
+                            <fieldset style="border: 1px #C8242F solid;">
+                                <legend>Focus</legend>
+                                <input type="text" class="col3inpt">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Password</legend>
+                                <input type="password" class="col3inpt">
+                            </fieldset>
+                            <fieldset style="border-style: dashed;">
+                                <legend>Disabled</legend>
+                                <input type="text" value="johndoe" disabled style="background-color:#ffffff;" class="col3inpt">
+                            </fieldset>
+                        </div>
+
+
+                        <br>
+
+
+                        <h4 class="analysis-label col4-head">Four Column</h4>
+                        <div class="col-style" id="col4">
+
+                            <fieldset style="width: 100%; border: 1px #C8242F solid;">
+                                <legend style="color: #C8242F;">Designation</legend>
+                                <input type="text" value="UI Designer">
+                            </fieldset>
+
+                            <input type="text" placeholder="Name" style="border: 1px #ADADAD solid; padding-left: 10px;" class="col4-ipt" >
+
+                            <fieldset>
+                                <legend>Username</legend>
+                                <input type="text" value="johndue">
+                            </fieldset>
+
+                            <input type="text" placeholder="Select" name="" id="" style="border: 1px #ADADAD solid; padding-left: 10px;" class="col4-ipt">
+
+                            <!-- <select name="" id="">
+                                <option value="" selected disabled>Select</option>
+                                <option value="">opt1</option>
+                                <option value="">opt2</option>
+                            </select> -->
+                        </div>
+
+                        <br>
+
+
+                        <h4 class="analysis-label">Other Design Elements</h4>
+                        <label class="analysis-sub-label">File Upload</label>
+                        <br>
+                        <div class="upload-content"> 
+                            <div class="upload-file-btn">
+                                <div class="upload-img" style="margin-right: 5px; margin-top: 8px;"> 
+                                    <img src="images/cloud-upload-icon.svg" alt="">
+                                </div>
+                                <div class="upload-txt" style="width: fit-content; margin-top: 8px;">
+                                    Upload
+                                </div>
+                            </div>
+                            <div style="margin: 10px; color: #ADADAD;"> No Item Selected</div>
+                        </div>
+                        <br>
+                        <label class="analysis-sub-label">Radio Button</label>
+                        <br>
+                        <div class="radio-style">
+                            <input type="radio" name="radio1" id="">Option1 &nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="radio1" id="" checked>Option2
+                        </div>
+                        <br>
+                        <label class="analysis-sub-label">Checkbox</label>
+                        <br>
+                        <div class="radio-style">
+                            <input type="checkbox" name="cb" id="" >Option1 &nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="cb" id="" checked>Option2
+                        </div>
+                        <br>
+                        <label class="analysis-sub-label">Snackbar</label>
+                        <br>
+                         <div class="snackbar-box">
+                            <div>
+                                <div class="err-msg msg-box"><img src="images/error-icon.svg" alt="" height="18px">&nbsp; This is an error Message</div>
+                                <div class="warning-msg msg-box"><img src="images/warning-icon.svg" alt="" height="18px">&nbsp; This is a warning message!</div>
+                            </div>
+                            <div>
+                                <div class="info-msg msg-box"><img src="images/info-icon.svg" alt="" height="18px">&nbsp; This is an information message!</div>
+                                <div class="success-msg msg-box"><img src="images/success-icon.svg" alt="" height="18px">&nbsp; This is an Success message!</div>
+                            </div>
+                        </div>
+                        <br>
+                        <label class="analysis-sub-label">Call to action</label>
+                        <br>
+                        <dvi id="btns">
+                            <input type="button" value="Primary" id="pr-btn">
+                            <input type="button" value="Secondary" id="sec-btn">
+                        </dvi>
+                        <br>
+                        <label class="analysis-sub-label">Tabs</label>
+                        <div class="tab-container">
+                            <div class="tab-block tab1" style="color: #C8242F;">Tab1</div>
+                            <div class="tab-block">Tab2</div>
+                            <div class="tab-block">Tab3</div>
+                        </div>
+                        <div class="tab-content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        </div>
+                    </form>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script>
+        const targetDiv = document.getElementById("sidebar");
+        const btn = document.getElementById("menu-bar-style");
+        btn.onclick = function () {
+        if (targetDiv.style.display !== "none") {
+            targetDiv.style.display = "none";
+        } else {
+            targetDiv.style.display = "block";
+        }
+        };
+    </script>
+</body>
+</html>
