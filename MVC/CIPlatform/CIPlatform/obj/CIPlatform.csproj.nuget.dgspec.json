@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dotnet\\CIPlatform\\CIPlatform\\CIPlatform.csproj": {}
+    "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\CIPlatform.csproj": {}
   },
   "projects": {
-    "F:\\dotnet\\CIPlatform\\CIPlatform\\CIPlatform.csproj": {
+    "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\CIPlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dotnet\\CIPlatform\\CIPlatform\\CIPlatform.csproj",
+        "projectUniqueName": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\CIPlatform.csproj",
         "projectName": "CIPlatform",
-        "projectPath": "F:\\dotnet\\CIPlatform\\CIPlatform\\CIPlatform.csproj",
+        "projectPath": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\CIPlatform.csproj",
         "packagesPath": "C:\\Users\\91927\\.nuget\\packages\\",
-        "outputPath": "F:\\dotnet\\CIPlatform\\CIPlatform\\obj\\",
+        "outputPath": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\91927\\AppData\\Roaming\\NuGet\\NuGet.Config",
