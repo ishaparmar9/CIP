@@ -2,15 +2,20 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+
+
 .main-box {
     display: flex;
+    position: relative;
 }
 
 .banner {
     width: 70%;
-    height: 100%;
 }
-
+.carousel-item img
+{
+    height: 100vh;
+}
 .carousel-caption {
     margin-bottom: -35px;
 }
@@ -137,8 +142,9 @@
     width: 30%;
     float: right;
     text-align: center;
-    position: relative;
-    top: -40px;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
     z-index: 9;
 }
 
@@ -457,4 +463,85 @@
         color: #414141;
         font-size: 18px;
     }
+}
+
+
+/*-------------------navbar---------------------------------------------------------------------------------------------*/
+
+.navbar {
+    padding: 0px;
+    height: 60px;
+    font-size: 14px;
+    width: 100%; 
+    position: relative;
+}
+
+.nav-left-box {
+  
+   width: 15%;
+}
+
+.nav-right-box{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 4px;
+
+}.nav-right-box2{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: -13.5px;
+    border-top: 1px solid #d9d9d9;
+    border-collapse:collapse;
+}
+
+.nav-2 {
+    /* position: absolute;
+    right: 140px;
+    left: 140px;*/
+    width: 80%;
+    margin: auto;
+    position: relative;
+
+}
+
+.dd-box button {
+    border: none;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    border-collapse:collapse;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 125px;
+    height: 56.3px;
+}
+
+    .dd-box button img {
+       
+        position: absolute;
+        right: 10px;
+        top: 50%;
+    }
+
+.search-box1 {
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+.search-bar1 {
+   
+    text-align: left;
+    border: none;  
+    outline: none;
+}
+
+.search-img {
+    height: 12px;
+    position: relative;
+    top: 30%;
+    left: 2%;
+    margin-right:5px;
 }
