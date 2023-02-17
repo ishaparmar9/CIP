@@ -218,6 +218,11 @@
         font-size: 7px;
     }
 
+    .carousel-item img
+    {
+        height: 100%;
+    }
+
     .main-box {
         display: flex;
         flex-direction: column;
@@ -233,6 +238,9 @@
 
     .policy-box {
         width: 100%;
+        float: none;
+        text-align: center;
+        position: relative;
         top: 30px;
         margin-bottom: 50px;
     }
@@ -319,7 +327,10 @@
         color: #414141;
         font-size: 13px;
     }
+
 }
+
+
 
 /*--------------------- mobileview -------------------*/
 @media screen and (max-width:600px) {
@@ -466,6 +477,7 @@
 }
 
 
+/*----------------------------------------------------------------------------------------------------------------------*/
 /*-------------------navbar---------------------------------------------------------------------------------------------*/
 
 .navbar {
@@ -474,10 +486,10 @@
     font-size: 14px;
     width: 100%; 
     position: relative;
+    background-color: #ffffff;
 }
 
 .nav-left-box {
-  
    width: 15%;
 }
 
@@ -493,17 +505,12 @@
     right: 0px;
     top: -13.5px;
     border-top: 1px solid #d9d9d9;
-    border-collapse:collapse;
 }
 
 .nav-2 {
-    /* position: absolute;
-    right: 140px;
-    left: 140px;*/
     width: 80%;
     margin: auto;
     position: relative;
-
 }
 
 .dd-box button {
@@ -520,7 +527,6 @@
 }
 
     .dd-box button img {
-       
         position: absolute;
         right: 10px;
         top: 50%;
@@ -544,4 +550,119 @@
     top: 30%;
     left: 2%;
     margin-right:5px;
+}
+
+
+/*-----------------------------------medium device---------------------------------------------------------------------------*/
+
+@media  screen and (max-width:850px)
+{
+    .dd-box button
+    {
+        width: 80px;
+    }
+}
+
+/*-----------------------------------small device---------------------------------------------------------------------------*/
+
+@media screen and (max-width:575px)
+{
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------mission card-----------------------------------------------------------------------------------*/
+.card-body
+{
+    position: relative;
+}
+.card-text {
+    font-size: 11px;
+    color: #757575;
+}
+
+.stars:not(:checked) > label:hover,
+.stars > input:checked ~ label {
+    color: #f7d000;
+}
+
+
+.stars:not(:checked) > input {
+    display: none;
+}
+
+.stars:not(:checked) > label {
+    color: rgb(171, 164, 164);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.fa-star {
+    color: #DDDDDD;
+}
+
+.apply-btn {
+    border-radius: 30px;
+    color: #F88634;
+    border: 1.5px solid #F88634;
+}
+
+.apply-btn:hover {
+    color: #ffffff;
+    background-color: #F88634;
+}
+
+.duration-box {
+    width: max-content;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    color: #757575;
+    background-color: #ffffff;
+    font-size: xx-small;
+    z-index: 2;
+    position: relative;
+    bottom: -12px;
+}
+
+.duration-box-lv
+{
+    font-size: 12px;
+    color: #757575;
+}
+.card-btns {
+    z-index: 10;
+    background-color: black;
+    width: max-content;
+    border-radius: 50px;
+    opacity: 50%;
+    padding: 3px 7px;
+    position: absolute;
+    right: 10px
+}
+.loc-container
+{
+    top: 10px;
+    font-size: 10px;
+    color: #d9d9d9;
+    letter-spacing: 0.5px;
+}
+.fav-container
+{
+    top: 70px
+}
+.recommend-container {
+    top: 105px
+}
+.theme-box {
+    width: max-content;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    color: #757575;
+    background-color: #ffffff;
+    font-size: xx-small;
+    z-index: 2;
+    position: absolute;
+    top: -12px;
 }
