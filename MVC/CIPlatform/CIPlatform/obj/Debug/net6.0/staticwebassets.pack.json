@@ -377,6 +377,10 @@
       "PackagePath": "staticwebassets\\images\\star.png"
     },
     {
+      "Id": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\images\\tools.svg",
+      "PackagePath": "staticwebassets\\images\\tools.svg"
+    },
+    {
       "Id": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\images\\twitter.png",
       "PackagePath": "staticwebassets\\images\\twitter.png"
     },

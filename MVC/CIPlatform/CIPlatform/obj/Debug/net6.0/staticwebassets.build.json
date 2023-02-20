@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MSFNGhtgn+jOujnxx/HejuErgfLWNTSxMIZK5w223E4=",
+  "Hash": "iL0Joi8xEeVdgMiycvrcHmEpJSdmXe4mcdThKUSrU6I=",
   "Source": "CIPlatform",
   "BasePath": "_content/CIPlatform",
   "Mode": "Default",
@@ -1596,6 +1596,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\star-empty.png"
+    },
+    {
+      "Identity": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\images\\tools.svg",
+      "SourceId": "CIPlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\",
+      "BasePath": "_content/CIPlatform",
+      "RelativePath": "images/tools.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tools.svg"
     },
     {
       "Identity": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\images\\twitter.png",
