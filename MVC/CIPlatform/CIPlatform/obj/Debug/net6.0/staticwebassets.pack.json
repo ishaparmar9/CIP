@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\css\\volmissionstyle.css",
+      "PackagePath": "staticwebassets\\css\\volmissionstyle.css"
+    },
+    {
       "Id": "F:\\Tatvasoft\\tatva-projects\\MVC\\CIPlatform\\CIPlatform\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
