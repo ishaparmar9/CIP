@@ -490,20 +490,23 @@
 }
 
 .nav-left-box {
-   width: 15%;
+   width: 14%;
+   margin-left: 0px;
 }
 
-.nav-right-box{
+.nav-right-box {
     display: flex;
     flex-direction: row;
     position: absolute;
     right: 4px;
+    top: -15px;
+}
 
-}.nav-right-box2{
+.nav-right-box2{
     display: flex;
     position: absolute;
     right: 0px;
-    top: -13.5px;
+    top: -13.3px;
     border-top: 1px solid #d9d9d9;
 }
 
@@ -552,11 +555,54 @@
     margin-right:5px;
 }
 
+.profile-name {
+    display: inline;
+}
+.profile-name-dd{
+    display: none;
+}
+.policy-dd {
+    margin-left: 30px;
+}
+.srch-btn {
+    position: absolute;
+    left: 0px;
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .profile-name {
+        display: none;
+    }
+    .profile-name-dd
+    {
+        display: block;
+    }
+    .policy-dd
+    {
+        margin-left: 12px;
+    }
+    .srch-btn
+    {
+        display: inline;
+    }
+    .search-box1
+    {
+        display: none;
+    }
+    .nav-right-box2
+    {
+        width: 100%;
+        height: inherit;
+        top: -29px;
+        justify-content: center;
+    }
+}
+
+
+
 
 /*-----------------------------------medium device---------------------------------------------------------------------------*/
-
-@media  screen and (max-width:850px)
-{
+@media screen and (max-width:850px) {
     .dd-box button
     {
         width: 80px;
@@ -629,6 +675,8 @@
     border-radius: 30px;
     color: #F88634;
     border: 1.5px solid #F88634;
+    padding: 5px 10px;
+    text-decoration: none;
 }
 
 .apply-btn:hover {
