@@ -596,6 +596,9 @@
         top: -29px;
         justify-content: center;
     }
+    .navbar-expand .navbar-nav .dd-menu-left {
+        left: -100%;
+    }
 }
 
 
@@ -621,6 +624,7 @@
 .card-img-top {
     position: relative;
     border-radius: 0px;
+    padding:0!important;
 }
 .card-title {
     overflow: hidden;
@@ -674,8 +678,8 @@
 .apply-btn {
     border-radius: 30px;
     color: #F88634;
-    border: 1.5px solid #F88634;
-    padding: 5px 10px;
+    border: 2px solid #F88634;
+    padding: 8px 10px;
     text-decoration: none;
 }
 
@@ -749,13 +753,185 @@
     font-size: xx-small;
     z-index: 2;
     position: absolute;
+    top: 122px;
+}
+.l-theme-box {
+    width: max-content;
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    color: #757575;
+    background-color: #ffffff;
+    font-size: xx-small;
+    z-index: 2;
+    position: absolute;
+    bottom: -12px;
+}
+
+.card
+{
+    width: 17rem;
+}
+#listviewBox
+{
+    width: 90%;
+    margin: auto;
+    padding-left:0;
+}
+
+@media screen and (max-width:770px) {
+    .card
+    {
+        width: 16rem;
+      
+    }
+    .fav-container
+    {
+        top: 50px;
+    }
+    .recommend-container
+    {
+        top: 85px;
+    }
+    .theme-box
+    {
+        top: 112px;
+    }
+    .l-theme-box
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .card {
+        width: 18rem;
+    }
+
+    .fav-container {
+        top: 60px;
+    }
+
+    .recommend-container {
+        top: 95px;
+    }
+    .theme-box
+    {
+        top: 126px;
+    }
+    .l-theme-box {
+        font-size: 10px; 
+    }
+   /* #listviewBox
+    {
+        display: none!important;
+    }
+    #listBtn {
+        display: none !important;
+    }*/
 }
 
 
-@media screen and (max-width: 768px)
+/*----------------------------------------------volunteering missiom page-------------------------------------*/
+
+.vol-mainbox {
+    width: 85%;
+    margin: auto;
+}
+
+
+.mission-desc {
+    font-size: 13px;
+}
+
+.goal-box {
+    position: absolute;
+    font-size: 11px;
+    top: -12px;
+    z-index: auto;
+    background-color: white;
+}
+
+.middle-box
 {
-    .listviewBox
-    {
-        display: none;
+    font-size: 15px;
+}
+.v-content
+{
+    font-size: 14px;
+}
+.v-content h3 {
+    color: #414141;
+}
+.doc-content div
+{
+    padding: 8px 15px;
+    margin-right: 12px;
+    margin-bottom: 5px;
+}
+.doc-content div img{
+    margin-right: 5px;
+    height: 20px;
+}
+#Description {
+    width: 100%;
+    outline: none;
+}
+.tab-default {
+    border-bottom: none;
+}
+
+.tab-active {
+    border-bottom: 1.5px solid black;
+}
+
+.volunteer-img
+{
+    border-radius: 100%;
+}
+.volunteer-img img 
+{
+    border-radius: 100%;
+     height: 50px;
+    width: 50px;
+}
+
+.comment-post-time
+{
+    font-size: 10.5px;
+}
+.info-box{
+    color: #757575;
+}
+.infobox-head {
+    width: max-content;
+    color: #414141;
+    border-bottom: 1px solid #000000;
+    font-size: 22px;
+}
+.recent-vol img{
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+}
+
+.recent-vol div
+{
+    font-size: 12px;
+    color: #757575;
+}
+
+.related-mission-head {
+    color: #757575;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    padding: 10px;
+}
+
+@media screen and (max-width: 995px) {
+    .middle-box{
+        flex-direction: column;
     }
 }

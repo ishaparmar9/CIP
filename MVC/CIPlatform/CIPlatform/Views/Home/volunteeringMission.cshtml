@@ -6,16 +6,17 @@
 
 
 
-<link rel="stylesheet" href="~/css/volmissionstyle.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 
-<div class="vol-mainbox m-auto mt-5 row d-xxl-flex justify-content-xxl-center" style="background-color: white">
-    <div class="col-xxl-4  col-md-6 col-12 img-box d-flex align-items-center">
+<div class="vol-mainbox">
+
+<div class="mt-5 row d-xxl-flex justify-content-xxl-center" style="background-color: white">
+    <div class="col-xxl-4 col-xl-5 col-lg-6 col-12 img-box d-flex align-items-center justify-content-center">
         
 
-        <div class="d-flex align-items-center">
+        <div>
 
        
             <partial name="_Carousal" />
@@ -24,7 +25,7 @@
         </div>
 
     </div>
-    <div class=" col-md-6 col-12 mt-md-0 mt-4">
+    <div class=" col-lg-6 col-12 mt-xl-0 mt-4">
         <div class="left-box flex-column " style="height: 100%">
             <div class="ms-3 pb-4" >
                 <h4 class="mission-head"  style="background-color: #ffffff;">
@@ -124,202 +125,436 @@
 
 
 
+@*----------------------------------middle part----------------------------------------------------------------------------------------------*@
+
+    <div class=" middle-box d-flex justify-content-between align-self-stretch mt-5">
+
+    @*----------------------------------tabs---------------------------------------*@
+    <div class="col-lg-7 col-12">
+        <div>
+            <div class="tabhead d-flex border-bottom">
+                    <div onclick="tabToggle1()" class="me-sm-5 me-1 pb-3 px-3 tab-default tab-active" role="button">
+                        Mission
+                </div>
+                    <div onclick="tabToggle2()" class="me-sm-5 me-1 px-3 tab-default" role="button">
+                    Organization
+                </div>
+                <div onclick="tabToggle3()" class="px-3 tab-default" role="button">
+                    Comments
+                </div>
+            </div>
+
+            <div class=" mt-4" id="v-mission-box" style="color: #757575; display:block;">
+            <div class="v-mission-content">
+                <h3>Introduction</h3>
+                <p class="intro-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    <br /><br />
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    <br /><br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h3>Chalenge</h3>
+                <p class="challenge-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    <br /><br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h3>Documents</h3>
+                <div class="d-flex align-items-center doc-content flex-wrap">
+                    <div class="border rounded-pill"><img src="~/images/pdf.png" /> lorem-ipsum.pdf</div>
+                    <div class="border rounded-pill"><img src="~/images/doc.png" /> at_vero_eos_accusamus.doc</div>
+                    <div class="border rounded-pill"><img src="~/images/xlsx.png" />important_doc.xls</div>
+                </div>
+            </div>
+        </div>
+
+            <div class=" mt-4" id="v-orgnisation-box" style="color: #757575; display:none;">
+                <p class="org-content">
+                    Optimy organizations working on environmental, social, advocacy and human rights. They can work to promote social or political change on a broad scale or very locally, NGOs play a critical part in developing society, improving communities, and promoting citizen participation.
+                </p>
+             </div>
+
+            <div class=" mt-4" id="v-comments-box" style="color: #757575; display:none;">
+              <textarea class="mb-3 p-3"  name="Description" id="Description" rows="3" data-val-maxlength-max="600" data-val="true" placeholder="Enter your comments..."></textarea>
+              <a class="apply-btn" role="button" style="font-size: 14px">Post comment</a>
+                    <div class="show-comment mt-5 p-4" style="background-color:#E8E8E8; font-size: 13px">
+                  <div class="d-flex align-items-start mb-3 p-3" style="background-color:#ffffff;">
+                      <div class="img-fluid volunteer-img ">
+                          <img src="~/images/volunteer1.png" />
+                      </div>
+                      <div class="flex-column ms-3">
+                          <div class="vol-name">Margaret Walsh</div>
+                          <div class="comment-post-time">Monday, October 21, 2019, 4:37 PM</div>
+                          <div class="comment-content mt-3">Nice mission great opportunity for people</div>
+                      </div>
+                  </div>
+
+                   <div class="d-flex align-items-start mb-3 p-3" style="background-color:#ffffff;">
+                      <div class=" volunteer-img ">
+                          <img src="~/images/volunteer2.png" />
+                      </div>
+                      <div class="flex-column ms-3">
+                          <div class="vol-name">Margaret Walsh</div>
+                          <div class="comment-post-time">Monday, October 21, 2019, 4:37 PM</div>
+                          <div class="comment-content mt-3">Nice mission great opportunity for people</div>
+                      </div>
+                  </div>
+
+                   <div class="d-flex align-items-start mb-3 p-3" style="background-color:#ffffff;">
+                      <div class=" volunteer-img ">
+                          <img src="~/images/volunteer3.png" />
+                      </div>
+                      <div class="flex-column ms-3">
+                          <div class="vol-name">Margaret Walsh</div>
+                          <div class="comment-post-time">Monday, October 21, 2019, 4:37 PM</div>
+                          <div class="comment-content mt-3">Nice mission great opportunity for people</div>
+                      </div>
+                  </div>
+
+                   <div class="d-flex align-items-start mb-3 p-3" style="background-color:#ffffff;">
+                      <div class=" volunteer-img ">
+                          <img src="~/images/volunteer4.png" />
+                      </div>
+                      <div class="flex-column ms-3">
+                          <div class="vol-name">Margaret Walsh</div>
+                          <div class="comment-post-time">Monday, October 21, 2019, 4:37 PM</div>
+                          <div class="comment-content mt-3">Nice mission great opportunity for people</div>
+                      </div>
+                  </div>
+                 
+              </div>
+            </div>
+        </div>
+    </div>
+    @*------------------------------------------------------------------------------------*@
+
+    @*----------------------------------info and recent volunteers-----------------------*@
+    <div class="col-lg-5 col-12 ms-lg-5 mt-lg-0 mt-5 flex-column flex-shrink-1">
+        <div class="info-box border py-3 px-4">
+                <div class="border-bottom w-100 mx-1 mb-2">
+                    <div class="pb-3  pe-2 infobox-head">Information</div>
+                </div>
+                <div class="border-bottom w-100 mx-1 py-3 row">
+                    <div class="col-3">Skills</div>
+                    <div class="col-9">Cool, Easy going, Math, Computer</div>
+                </div>
+                <div class="border-bottom w-100 mx-1 py-3 row">
+                    <div class="col-3">Days</div>
+                    <div class="col-9">Weekend only</div>
+                </div>
+                <div class="py-3 mx-1 w-100 row">
+                    <div class="col-3">Rating</div>
+                    <div class="col-9">
+                        <span class="stars fs-6 opacity-75">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </span>
+                        <span>(by 125 volunteers)</span>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="recent-vol-box border py-3 px-4 my-5">
+            <div class="border-bottom w-100 mx-1 mb-2">
+                <div class="pb-3  pe-2 infobox-head">Recent Volunteers</div>
+            </div>
+            <div class="w-100 mx-1 py-3 row row-cols-3  text-center">
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                <div class="col flex-column mt-3 mb-4 recent-vol">
+                    <img src="~/images/volunteer1.png"/>
+                    <div class="mt-2">Andrew Johnson</div>
+                </div>
+                
+                
+
+                
+            </div>
+        </div>
+    </div>
+    @*---------------------------------------------------------------------------------------*@
+</div>
+
+
+@*-------------------------------------------------------------------------------------------------------------------------------------------*@
+
+
 <hr class="mt-5"/>
 
-@*
-<div>
 
-    <h3 class="text-center mb-3 mt-5" style="color: #757575">Related Missions</h3>
+<div  style=" background-color:#ffffff;">
 
-    <div class=" container " style="width: 100%; margin:auto;">
-    <div class=" row row-cols-3">
+    <h3 class="text-center mb-3 mt-5 related-mission-head">Related Missions</h3>
+
+        <div class=" container " style="width: 100%; margin:auto;">
+            <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
 
 
 
-        <div class="col">
-            <div class="card p-0 m-auto mb-4 " style="width: 17rem; box-shadow: 0px 0px 10px #0000000F; position: relative;">
-                <div class="card-btns loc-container">
-                    <img src="~/images/pin.png" style="height: 13px;" />
-                    <span>Toronto</span>
-                </div>
-                <div class="card-btns fav-container">
-                    <img src="~/images/heart.png" style="height: 13px;" />
-                </div>
-                <div class="card-btns recommend-container">
-                    <img src="~/images/user.png" style="height: 13px;" />
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="theme-box px-3 py-1" style="top: 122px;">
-                        Enviroment
-                    </div>
-                </div>
-                <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Grow trees - On the path to enviroment sustainability</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div style="font-size: 12px">Tree Canada</div>
-                        <span class="stars">
-                            <div for="rating-5" class="fas fa-star" style="color: #F8D441;"></div>
-                            <div for="rating-4" class="fas fa-star"></div>
-                            <div for="rating-3" class="fas fa-star"></div>
-                            <div for="rating-2" class="fas fa-star"></div>
-                            <div for="rating-1" class="fas fa-star"></div>
-                        </span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="duration-box px-2 py-1">
-                        From 10/10/2010 until 11/11/2011
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between mt-1">
-                        <div class="availability-box d-flex align-items-center">
-                            <img src="~/images/Seats-left.png" class="me-2" height="18px" />
-                            <div class="availability-content flex-column" style="font-size:9px; color:#757575;">
-                                <div style="font-size: medium">Seats</div>
-                                <div style="color:">Seats Left</div>
+                <div class="col">
+                    <div class="card p-0 m-auto mb-4 " style=" box-shadow: 0px 0px 10px #0000000F; position: relative;">
+                        <div class="card-btns loc-container">
+                            <img src="~/images/pin.png" style="height: 13px;" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="card-btns fav-container" role="button">
+                            <img src="~/images/heart.png" style="height: 13px;" />
+                        </div>
+                        <div class="card-btns recommend-container" role="button">
+                            <img src="~/images/user.png" style="height: 13px;" />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="theme-box px-3 py-1">
+                                Enviroment
                             </div>
                         </div>
-                        <div class="deadline-box d-flex me-4 align-items-center">
-                            <img src="~/images/deadline.png" height="22px" class="me-2" />
-                            <div class="deadline-content flex-column" style="font-size:9px; color:#757575;">
-                                <div style="font-size: medium">09/09/2009</div>
-                                <div>Deadline</div>
+                        <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Grow trees - On the path to enviroment sustainability</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 12px">Tree Canada</div>
+                                <span class="stars">
+                                    <div for="rating-5" class="fas fa-star" style="color: #F8D441;"></div>
+                                    <div for="rating-4" class="fas fa-star"></div>
+                                    <div for="rating-3" class="fas fa-star"></div>
+                                    <div for="rating-2" class="fas fa-star"></div>
+                                    <div for="rating-1" class="fas fa-star"></div>
+                                </span>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <div class="card-body d-flex justify-content-center">
-                    <a href="#" class="btn apply-btn" style="font-size: smaller;">Apply&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
+                        <div class="d-flex justify-content-center">
+                            <div class="duration-box px-2 py-1">
+                                From 10/10/2010 until 11/11/2011
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between mt-1">
+                                <div class="availability-box d-flex align-items-center">
+                                    <img src="~/images/Seats-left.png" class="me-2" height="18px" />
+                                    <div class="availability-content flex-column" style="font-size:9px; color:#757575;">
+                                        <div style="font-size: medium">Seats</div>
+                                        <div style="color:">Seats Left</div>
+                                    </div>
+                                </div>
+                                <div class="deadline-box d-flex me-4 align-items-center">
+                                    <img src="~/images/deadline.png" height="22px" class="me-2" />
+                                    <div class="deadline-content flex-column" style="font-size:9px; color:#757575;">
+                                        <div style="font-size: medium">09/09/2009</div>
+                                        <div>Deadline</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-body d-flex justify-content-center">
+                            <a href="#" class="apply-btn" style="font-size: smaller;">Apply&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="col">
-            <div class="card p-0 m-auto mb-4 " style="width: 17rem; box-shadow: 0px 0px 10px #0000000F; position: relative;">
-                <div class="card-btns loc-container">
-                    <img src="~/images/pin.png" style="height: 13px;" />
-                    <span>Toronto</span>
-                </div>
-                <div class="card-btns fav-container">
-                    <img src="~/images/heart.png" style="height: 13px;" />
-                </div>
-                <div class="card-btns recommend-container">
-                    <img src="~/images/user.png" style="height: 13px;" />
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="theme-box px-3 py-1" style="top: 122px;">
-                        Enviroment
-                    </div>
-                </div>
-                <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Grow trees - On the path to enviroment sustainability</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div style="font-size: 12px">Tree Canada</div>
-                        <span class="stars">
-                            <div for="rating-5" class="fas fa-star" style="color: #F8D441;"></div>
-                            <div for="rating-4" class="fas fa-star"></div>
-                            <div for="rating-3" class="fas fa-star"></div>
-                            <div for="rating-2" class="fas fa-star"></div>
-                            <div for="rating-1" class="fas fa-star"></div>
-                        </span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="duration-box px-2 py-1">
-                        From 10/10/2010 until 11/11/2011
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between mt-1">
-                        <div class="availability-box d-flex align-items-center">
-                            <img src="~/images/Seats-left.png" class="me-2" height="18px" />
-                            <div class="availability-content flex-column" style="font-size:9px; color:#757575;">
-                                <div style="font-size: medium">Seats</div>
-                                <div style="color:">Seats Left</div>
+                <div class="col">
+                    <div class="card p-0 m-auto mb-4 " style=" box-shadow: 0px 0px 10px #0000000F; position: relative;">
+                        <div class="card-btns loc-container">
+                            <img src="~/images/pin.png" style="height: 13px;" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="card-btns fav-container" role="button">
+                            <img src="~/images/heart.png" style="height: 13px;" />
+                        </div>
+                        <div class="card-btns recommend-container" role="button">
+                            <img src="~/images/user.png" style="height: 13px;" />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="theme-box px-3 py-1">
+                                Enviroment
                             </div>
                         </div>
-                        <div class="deadline-box d-flex me-4 align-items-center">
-                            <img src="~/images/deadline.png" height="22px" class="me-2" />
-                            <div class="deadline-content flex-column" style="font-size:9px; color:#757575;">
-                                <div style="font-size: medium">09/09/2009</div>
-                                <div>Deadline</div>
+                        <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Grow trees - On the path to enviroment sustainability</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 12px">Tree Canada</div>
+                                <span class="stars">
+                                    <div for="rating-5" class="fas fa-star" style="color: #F8D441;"></div>
+                                    <div for="rating-4" class="fas fa-star"></div>
+                                    <div for="rating-3" class="fas fa-star"></div>
+                                    <div for="rating-2" class="fas fa-star"></div>
+                                    <div for="rating-1" class="fas fa-star"></div>
+                                </span>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <div class="card-body d-flex justify-content-center">
-                    <a href="#" class="btn apply-btn" style="font-size: smaller;">Apply&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
+                        <div class="d-flex justify-content-center">
+                            <div class="duration-box px-2 py-1">
+                                From 10/10/2010 until 11/11/2011
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between mt-1">
+                                <div class="availability-box d-flex align-items-center">
+                                    <img src="~/images/Seats-left.png" class="me-2" height="18px" />
+                                    <div class="availability-content flex-column" style="font-size:9px; color:#757575;">
+                                        <div style="font-size: medium">Seats</div>
+                                        <div style="color:">Seats Left</div>
+                                    </div>
+                                </div>
+                                <div class="deadline-box d-flex me-4 align-items-center">
+                                    <img src="~/images/deadline.png" height="22px" class="me-2" />
+                                    <div class="deadline-content flex-column" style="font-size:9px; color:#757575;">
+                                        <div style="font-size: medium">09/09/2009</div>
+                                        <div>Deadline</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-body d-flex justify-content-center">
+                            <a href="#" class="apply-btn" style="font-size: smaller;">Apply&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-         <div class="col">
-            <div class="card p-0 m-auto mb-4 " style="width: 17rem; box-shadow: 0px 0px 10px #0000000F; position: relative;">
-                <div class="card-btns loc-container">
-                    <img src="~/images/pin.png" style="height: 13px;" />
-                    <span>Toronto</span>
-                </div>
-                <div class="card-btns fav-container">
-                    <img src="~/images/heart.png" style="height: 13px;" />
-                </div>
-                <div class="card-btns recommend-container">
-                    <img src="~/images/user.png" style="height: 13px;" />
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="theme-box px-3 py-1" style="top: 122px;">
-                        Enviroment
-                    </div>
-                </div>
-                <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Grow trees - On the path to enviroment sustainability</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div style="font-size: 12px">Tree Canada</div>
-                        <span class="stars">
-                            <div for="rating-5" class="fas fa-star" style="color: #F8D441;"></div>
-                            <div for="rating-4" class="fas fa-star"></div>
-                            <div for="rating-3" class="fas fa-star"></div>
-                            <div for="rating-2" class="fas fa-star"></div>
-                            <div for="rating-1" class="fas fa-star"></div>
-                        </span>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <div class="duration-box px-2 py-1">
-                        From 10/10/2010 until 11/11/2011
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between mt-1">
-                        <div class="availability-box d-flex align-items-center">
-                            <img src="~/images/Seats-left.png" class="me-2" height="18px" />
-                            <div class="availability-content flex-column" style="font-size:9px; color:#757575;">
-                                <div style="font-size: medium">Seats</div>
-                                <div style="color:">Seats Left</div>
+                <div class="col">
+                    <div class="card p-0 m-auto mb-4 " style=" box-shadow: 0px 0px 10px #0000000F; position: relative;">
+                        <div class="card-btns loc-container">
+                            <img src="~/images/pin.png" style="height: 13px;" />
+                            <span>Toronto</span>
+                        </div>
+                        <div class="card-btns fav-container" role="button">
+                            <img src="~/images/heart.png" style="height: 13px;" />
+                        </div>
+                        <div class="card-btns recommend-container" role="button">
+                            <img src="~/images/user.png" style="height: 13px;" />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="theme-box px-3 py-1">
+                                Enviroment
                             </div>
                         </div>
-                        <div class="deadline-box d-flex me-4 align-items-center">
-                            <img src="~/images/deadline.png" height="22px" class="me-2" />
-                            <div class="deadline-content flex-column" style="font-size:9px; color:#757575;">
-                                <div style="font-size: medium">09/09/2009</div>
-                                <div>Deadline</div>
+                        <img src="~/images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Grow trees - On the path to enviroment sustainability</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 12px">Tree Canada</div>
+                                <span class="stars">
+                                    <div for="rating-5" class="fas fa-star" style="color: #F8D441;"></div>
+                                    <div for="rating-4" class="fas fa-star"></div>
+                                    <div for="rating-3" class="fas fa-star"></div>
+                                    <div for="rating-2" class="fas fa-star"></div>
+                                    <div for="rating-1" class="fas fa-star"></div>
+                                </span>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <div class="card-body d-flex justify-content-center">
-                    <a href="#" class="btn apply-btn" style="font-size: smaller;">Apply&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
+                        <div class="d-flex justify-content-center">
+                            <div class="duration-box px-2 py-1">
+                                From 10/10/2010 until 11/11/2011
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between mt-1">
+                                <div class="availability-box d-flex align-items-center">
+                                    <img src="~/images/Seats-left.png" class="me-2" height="18px" />
+                                    <div class="availability-content flex-column" style="font-size:9px; color:#757575;">
+                                        <div style="font-size: medium">Seats</div>
+                                        <div style="color:">Seats Left</div>
+                                    </div>
+                                </div>
+                                <div class="deadline-box d-flex me-4 align-items-center">
+                                    <img src="~/images/deadline.png" height="22px" class="me-2" />
+                                    <div class="deadline-content flex-column" style="font-size:9px; color:#757575;">
+                                        <div style="font-size: medium">09/09/2009</div>
+                                        <div>Deadline</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="card-body d-flex justify-content-center">
+                            <a href="#" class="apply-btn" style="font-size: smaller;">Apply&nbsp;&nbsp;<i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+
+       
 
     </div>
 </div>
 
-</div>*@
+</div>
+
+
+</div>
+
+
+
+<script>
+    var tabbtn = document.getElementsByClassName('tab-default');
+    var missionbox = document.getElementById('v-mission-box');
+    var orgbox = document.getElementById('v-orgnisation-box');
+    var commentbox = document.getElementById('v-comments-box');
+    function tabToggle1()
+    {
+        tabbtn[0].classList.add("tab-active");
+        tabbtn[1].classList.remove("tab-active");
+        tabbtn[2].classList.remove("tab-active");
+        missionbox.style.display='block';
+        orgbox.style.display='none';
+        commentbox.style.display='none';
+
+    }
+    function tabToggle2(){
+        tabbtn[1].classList.add("tab-active");
+        tabbtn[0].classList.remove("tab-active");
+        tabbtn[2].classList.remove("tab-active");
+        missionbox.style.display = 'none';
+        orgbox.style.display = 'block';
+        commentbox.style.display = 'none';
+    }
+    function tabToggle3(){
+        tabbtn[2].classList.add("tab-active");
+        tabbtn[1].classList.remove("tab-active");
+        tabbtn[0].classList.remove("tab-active");
+        missionbox.style.display = 'none';
+        orgbox.style.display = 'none';
+        commentbox.style.display = 'block';
+
+    }
+
+   
+   
+
+</script>
